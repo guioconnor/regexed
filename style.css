@@ -1,0 +1,87 @@
+body {
+	font-family: helvetica, arial, sans-serif;
+	text-align: center;
+}
+
+input {
+	border: 1px solid #ccc;
+	border-radius: 5px;	
+	padding: 5px;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#regexp {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	background-color: #eee;
+}
+
+#regexp input {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 1.4em;
+	padding: 10px;
+	width: 70%;
+}
+
+#result {
+	margin: 0.5em auto;
+	border-radius: 30px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #aaa;
+	background-color: #ccc;
+	width: 10em;
+	padding: 3px 0;
+	overflow: visible;
+	font-size: 1.3em;
+}
+
+#result:after {
+	margin-left: 0.5em;
+	padding: 5px 10px;
+	border-radius: 30px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #aaa;
+}
+
+#result.failed:after {
+	content: "\2717";
+	background-color: #fcc;
+}
+
+#result.passed:after {
+	content: "\2713";
+	background-color: #cfc;
+}
+
+#tests {
+	overflow: auto;
+	padding-top: 10px;
+	border-top: 1px solid #ccc;
+}
+
+#tests>div {
+	width: 49%;
+}
+
+#positive input,
+#negative input {
+	width: 80%;
+	font-size: 1.2em;
+}
+
+#positive {
+	float: left;
+	text-align: right;
+}
+
+#negative {
+	float: right;
+	text-align: left;
+}

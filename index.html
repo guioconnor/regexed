@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Regex Tester</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="regextester.js"></script>
+		<link rel="stylesheet" type="text/css" href="reset.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<!-- <h1>Regex Tester</h1> -->
+		<div id="regexp">
+			<h2>Regex</h2>
+			<input type="text" placeholder="Your regex here">
+			<p id="result">type your regexp</p>
+		</div>
+		<div id="tests">
+			<div id="positive">
+				<h2>Positive tests</h2>
+				<ul >
+					<li><input type="text" placeholder="A string that matches"></li>
+				</ul>
+			</div>
+			<div id="negative">
+				<h2>Negative tests</h2>
+				<ul>
+					<li><input type="text" placeholder="A string that doesn't match"></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
